@@ -81,6 +81,8 @@ public class AIChessPlayer : ConcreteChessPlayer
     {
         aiThreadHandle = Utility.GetCurrentThread();
         this.move = aiTask();
+        // sleep for this long to let the previous effect play.
+        Thread.Sleep(1500);
     }
 
     /// <summary>
