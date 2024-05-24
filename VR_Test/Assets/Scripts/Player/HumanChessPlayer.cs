@@ -132,8 +132,8 @@ public class HumanChessPlayer : ConcreteChessPlayer
     /// <returns>true iff an end move has been performed by the user.</returns>
     private bool checkUserInputPerFrame(Board board)
     {
-        var currentUserInput = Game.gameSingleton.inputMgr.getCurrentMove();
-        // var currentUserInput = Game.gameSingleton.inputMgr.getCurrentGesture();
+        // var currentUserInput = Game.gameSingleton.inputMgr.getCurrentMove();
+        var currentUserInput = Game.gameSingleton.inputMgr.getCurrentGesture();
 
         var delta = interpretAction(currentUserInput);
         
